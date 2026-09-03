@@ -300,6 +300,73 @@
     text-align:center;padding:34px 20px;font-size:.8rem;color:#888;
   }
   footer a{color:var(--purple);font-weight:700;}
+    /* ===== 協賛セクション ===== */
+  .sp-tier { margin-bottom: 42px; }
+  .sp-tier:last-child { margin-bottom: 0; }
+  .sp-tier-head {
+    display: inline-block;
+    padding: 5px 18px;
+    border-radius: 999px;
+    font-weight: 700;
+    font-size: 14px;
+    letter-spacing: .08em;
+    color: #fff;
+    margin-bottom: 14px;
+  }
+  .sp-gold   { background: #d9a300; }
+  .sp-silver { background: #8e97a8; }
+  .sp-bronze { background: #b5763f; }
+  .sp-gift   { background: var(--teal); }
+
+  .sp-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  .sp-list li {
+    background: #fff;
+    border-radius: 16px;
+    padding: 18px 26px;
+    min-height: 82px;
+    box-shadow: 0 2px 10px rgba(45, 42, 62, .08);
+    flex: 0 1 340px;
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .sp-list img {
+    max-width: 100%;
+    max-height: 46px;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+    display: block;
+  }
+  .sp-gold-list li { flex: 1 1 300px; min-height: 108px; padding: 22px 30px; }
+  .sp-gold-list img { max-height: 64px; }
+
+  .sp-note {
+    margin: 8px 0 0;
+    font-size: 14px;
+    line-height: 1.8;
+    color: var(--ink);
+    opacity: .8;
+  }
+  .sp-note.sp-intro { margin: 0 0 30px; }
+  .sp-thanks {
+    margin: 36px 0 0;
+    font-size: 15px;
+    line-height: 2;
+    color: var(--ink);
+  }
+  @media (max-width: 600px) {
+    .sp-list li { flex: 1 1 100%; }
+    .sp-gold-list li { min-height: 96px; }
+  }
 </style>
 </head>
 <body id="top">
@@ -459,7 +526,54 @@
   </div>
 </section>
 
-<section style="background:var(--teal-light);">
+<section id="sponsor" style="background:var(--pink-light);">
+  <div class="inner">
+    <p class="sec-label">Sponsor</p>
+    <h2 class="sec-title">ご協賛<span class="mark">企業</span></h2>
+
+    <p class="sp-note sp-intro">
+      「STEM女子未来会議2026」は、下記の企業・団体さまのご協賛により開催いたします。
+    </p>
+
+    <div class="sp-tier">
+      <span class="sp-tier-head sp-gold">GOLD SPONSOR</span>
+      <ul class="sp-list sp-gold-list">
+        <li><img src="logos/honda-logicom.png" alt="ホンダロジコム株式会社"></li>
+        <li><img src="logos/jal.png" alt="日本航空株式会社"></li>
+      </ul>
+    </div>
+
+    <div class="sp-tier">
+      <span class="sp-tier-head sp-silver">SILVER SPONSOR</span>
+      <ul class="sp-list">
+        <li><img src="logos/moneyforward.png" alt="株式会社マネーフォワード"></li>
+      </ul>
+    </div>
+
+    <div class="sp-tier">
+      <span class="sp-tier-head sp-bronze">BRONZE SPONSOR</span>
+      <ul class="sp-list">
+        <li><img src="logos/monozukuri-avengers.png" alt="一般社団法人ものづくりアベンジャーズ"></li>
+      </ul>
+    </div>
+
+    <div class="sp-tier">
+      <span class="sp-tier-head sp-gift">SPECIAL SUPPORT</span>
+      <ul class="sp-list">
+        <li><img src="logos/nativecamp.png" alt="株式会社ネイティブキャンプ"></li>
+      </ul>
+      <p class="sp-note">
+        ご参加者・運営スタッフ・登壇者の皆さまへ、オンライン英会話レッスンを3か月間無料・回数無制限でご利用いただける優待コードをご提供いただいています。
+      </p>
+    </div>
+
+    <p class="sp-thanks">
+      あたたかいご支援を賜り、心より御礼申し上げます。<br>
+      理工系で学び、働く未来を身近に感じられる場を、皆さまとともにつくってまいります。
+    </p>
+  </div>
+</section>
+  <section style="background:var(--teal-light);">
   <div class="inner">
     <p class="sec-label">Organizer</p>
     <h2 class="sec-title">主催<span class="mark">について</span></h2>
